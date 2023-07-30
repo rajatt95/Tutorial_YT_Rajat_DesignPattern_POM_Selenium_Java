@@ -13,31 +13,41 @@
 
 /***************************************************/
 
-package tutorial.POM.pages._04_BuilderPattern;
+package tutorial.POM.pages._06_HandleComponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import tutorial.POM.pages._06_HandleComponents.components.AppHeader;
 
 /**
- * Represents the LoginPage of the web application.
- * This class contains web elements declaration and methods to interact with the elements on the Login page.
+ * Represents the HomePage of the web application.
+ * This class contains web elements declaration and methods to interact with the elements on the Home page.
  */
-public class LoginPage {
+
+public class HomePage {
 
     WebDriver driver;
 
+    private AppHeader appHeader;
+
+    public AppHeader getAppHeader() {
+        return appHeader;
+    }
+
     /**
-     * Constructor for the LoginPage class.
+     * Constructor for the HomePage class.
      * Initializes the WebDriver.
      *
      * @param driver The WebDriver instance to be used for interacting with the web application.
      */
-    public LoginPage(WebDriver driver){
+    public HomePage(WebDriver driver){
         // RHS driver - coming from the test class
             // When we are creating the object of this class
                 // Constructor of this class gets called
         // LHS driver - defined in this class
         this.driver = driver;
+        appHeader = new AppHeader(driver);
     }
 
     /***************************************************************************************/
@@ -45,11 +55,15 @@ public class LoginPage {
     // Web Elements Declaration
     /***************************************************************************************/
 
-
     // Without Page Factories
-    private By textBox_Username = By.xpath("//*[@id=\"user-name\"]");
-    private By textBox_Password = By.xpath("//input[@placeholder='Password']");
-    private By button_Login = By.id("login-button");
+
+    // Creating WebElements as private and public methods to access them -
+        // This is the example of ENCAPSULATION (OOPS Concept)
+            // Encapsulation refers to integrating data (variables) and code (methods) into a single unit.
+            // A class's variables are hidden from other classes and can only be accessed by the methods of the class in which they are found.
+
+    private final By icon_Twitter = By.xpath("//a[normalize-space()='Twitter']");
+    private final By msg_Footer = By.xpath("//div[@class='footer_copy']");
 
     /***************************************************************************************/
     // Methods | Tasks | Functionality | Behavior
@@ -57,35 +71,21 @@ public class LoginPage {
     /***************************************************************************************/
 
     /**
-     * Fills the username field with the provided username.
+     * Returns the WebElement representing the Twitter icon on the Home page.
      *
-     * @param username The username to be filled in the username field.
+     * @return The WebElement representing the Twitter icon.
      */
-    public LoginPage fill_TextBox_Username(String username){
-        driver.findElement(textBox_Username).sendKeys(username);
-        // This is the example of BUILDER PATTERN
-            // After this operation, User remains on the same page
-        return this;
+    public WebElement get_Element_Icon_Twitter(){
+        return driver.findElement(icon_Twitter);
     }
 
     /**
-     * Fills the password field with the provided password.
+     * Returns the WebElement representing the footer message on the Home page.
      *
-     * @param password The password to be filled in the password field.
+     * @return The WebElement representing the footer message.
      */
-    public LoginPage fill_TextBox_Password(String password){
-        driver.findElement(textBox_Password).sendKeys(password);
-        // This is the example of BUILDER PATTERN
-            // After this operation, User remains on the same page
-        return this;
+    public WebElement get_Element_Msg_Footer(){
+        return driver.findElement(msg_Footer);
     }
-
-    /**
-     * Clicks the login button.
-     */
-    public void click_Button_Login(){
-        driver.findElement(button_Login).click();
-    }
-
 
 }

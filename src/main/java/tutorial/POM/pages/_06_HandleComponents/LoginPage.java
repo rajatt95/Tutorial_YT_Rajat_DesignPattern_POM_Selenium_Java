@@ -13,7 +13,7 @@
 
 /***************************************************/
 
-package tutorial.POM.pages._04_BuilderPattern;
+package tutorial.POM.pages._06_HandleComponents;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -47,9 +47,9 @@ public class LoginPage {
 
 
     // Without Page Factories
-    private By textBox_Username = By.xpath("//*[@id=\"user-name\"]");
-    private By textBox_Password = By.xpath("//input[@placeholder='Password']");
-    private By button_Login = By.id("login-button");
+    private final By textBox_Username = By.xpath("//*[@id=\"user-name\"]");
+    private final By textBox_Password = By.xpath("//input[@placeholder='Password']");
+    private final By button_Login = By.id("login-button");
 
     /***************************************************************************************/
     // Methods | Tasks | Functionality | Behavior
@@ -83,8 +83,11 @@ public class LoginPage {
     /**
      * Clicks the login button.
      */
-    public void click_Button_Login(){
+    public HomePage click_Button_Login(){
         driver.findElement(button_Login).click();
+        // This is the example of FLUENT INTERFACE
+            // After this operation, User navigates to the HomePage
+        return new HomePage(driver);
     }
 
 
