@@ -1,0 +1,94 @@
+<!--
+    #/**
+    # * @author Rajat Verma
+    # * Email: rajatvermaa95@gmail.com
+    # * GitHub Profile: https://github.com/rajatt95
+    # * GitHub Page: https://rajatt95.github.io/
+    # * LinkedIn: https://www.linkedin.com/in/rajatt95/
+    # * Topmate: https://topmate.io/rajatt95
+    # * Telegram: https://t.me/rajatt95
+    # * Instagram: https://www.instagram.com/rajattvermaa95/
+    # * YouTube: https://www.youtube.com/@rajatt95
+    # * WhatsApp: https://chat.whatsapp.com/DVRP0ViD0YwELUKF2XMJHy
+    # */
+    #/***************************************************/
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.learning</groupId>
+  <artifactId>Base_Tutorial_YT_Rajat_DesignPattern_POM_Selenium_Java</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Base_Tutorial_YT_Rajat_DesignPattern_POM_Selenium_Java</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>15</maven.compiler.source>
+    <maven.compiler.target>15</maven.compiler.target>
+
+    <!-- Dependencies version -->
+    <selenium.java.version>4.10.0</selenium.java.version>
+    <webdrivermanager.version>5.4.1</webdrivermanager.version>
+    <testng.version>7.8.0</testng.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <slf4j.version>2.0.6</slf4j.version>
+
+
+  </properties>
+
+  <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <!-- <version>4.10.0</version> -->
+      <version>${selenium.java.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- This can be used as Replacement for Thread.sleep() -->
+    <!-- Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS); -->
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${commons-lang3.version}</version>
+    </dependency>
+
+    <!-- These below 2 dependencies are used to remove the logs/statements from Console -->
+      <!-- SLF4J: No SLF4J providers were found.-->
+      <!-- SLF4J: Defaulting to no-operation (NOP) logger implementation-->
+      <!-- SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+
+  </dependencies>
+</project>
