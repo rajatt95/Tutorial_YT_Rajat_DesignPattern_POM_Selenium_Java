@@ -30,7 +30,8 @@ import tutorial.POM.pages._02_Without_PageFactories.LoginPage;
 public class Test_02_Login_POM_Without_PageFactories extends BaseTest {
 
     // Test_02_Login_POM_Without_PageFactories extends BaseTest - This is the example of INHERITANCE (OOPS Concept) - Single-level inheritance
-        // It is a concept that acquires the properties and behaviors from Parent/Base/Super class to Child/Derived/Sub classes
+    // The Inheritance is used to implement the "is-a" relationship.
+    // It is a concept that acquires the properties and behaviors from Parent/Base/Super class to Child/Derived/Sub classes
 
     /**
      * Test case to verify login functionality with valid credentials.

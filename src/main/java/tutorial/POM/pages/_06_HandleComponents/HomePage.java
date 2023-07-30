@@ -47,6 +47,11 @@ public class HomePage {
                 // Constructor of this class gets called
         // LHS driver - defined in this class
         this.driver = driver;
+
+        // This is the example of COMPOSITION (OOPS Concept)
+            // The Composition is a way to design or implement the "has-a" relationship.
+            // The "has-a" relationship is used to ensure the code reusability in our program.
+                // In Composition, we use an instance variable that refers to another object.
         appHeader = new AppHeader(driver);
     }
 
