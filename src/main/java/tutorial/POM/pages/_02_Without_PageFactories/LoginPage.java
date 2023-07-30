@@ -47,9 +47,9 @@ public class LoginPage {
 
 
     // Without Page Factories
-    private By textBox_Username = By.xpath("//*[@id=\"user-name\"]");
-    private By textBox_Password = By.xpath("//input[@placeholder='Password']");
-    private By button_Login = By.id("login-button");
+    private final By textBox_Username = By.xpath("//*[@id=\"user-name\"]");
+    private final By textBox_Password = By.xpath("//input[@placeholder='Password']");
+    private final By button_Login = By.id("login-button");
 
     /***************************************************************************************/
     // Methods | Tasks | Functionality | Behavior

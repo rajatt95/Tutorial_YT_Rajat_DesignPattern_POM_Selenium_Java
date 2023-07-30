@@ -54,8 +54,8 @@ public class HomePage {
             // Encapsulation refers to integrating data (variables) and code (methods) into a single unit.
             // A class's variables are hidden from other classes and can only be accessed by the methods of the class in which they are found.
 
-    private By icon_Twitter = By.xpath("//a[normalize-space()='Twitter']");
-    private By msg_Footer = By.xpath("//div[@class='footer_copy']");
+    private final By icon_Twitter = By.xpath("//a[normalize-space()='Twitter']");
+    private final By msg_Footer = By.xpath("//div[@class='footer_copy']");
 
     /***************************************************************************************/
     // Methods | Tasks | Functionality | Behavior
