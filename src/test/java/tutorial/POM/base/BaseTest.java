@@ -8,7 +8,8 @@
  * Telegram: https://t.me/rajatt95
  * Instagram: https://www.instagram.com/rajattvermaa95/
  * YouTube: https://www.youtube.com/@rajatt95
- * WhatsApp: https://chat.whatsapp.com/DVRP0ViD0YwELUKF2XMJHy
+ * WhatsApp Community: https://chat.whatsapp.com/DVRP0ViD0YwELUKF2XMJHy
+ * WhatsApp Channel: https://whatsapp.com/channel/0029Va9XXMhJ93waOU5Xer3r
  */
 
 /***************************************************/
@@ -20,6 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -41,8 +43,8 @@ public class BaseTest {
     @BeforeMethod
     public void setup(){
         // System.setProperty("webdriver.chrome.driver","path to chromedriver.exe");
-        // WebDriverManager.chromedriver().setup();
-        WebDriverManager.edgedriver().setup();
+        WebDriverManager.chromedriver().setup();
+        // WebDriverManager.edgedriver().setup();
         // WebDriverManager.firefoxdriver().setup();
 
 
@@ -52,10 +54,13 @@ public class BaseTest {
         // new - Keyword in Java (used to create the object a class)
 
         // This is the example of ABSTRACTION (OOPS Concept)
-            // Abstraction is a process of hiding the implementation details and showing only functionality to the user.
-        // driver = new ChromeDriver();
-        driver = new EdgeDriver();
+            // Abstraction is a process of hiding the implementation details and showing only functionality to the user./
+        driver = new ChromeDriver();
+        // driver = new EdgeDriver();
         // driver = new FirefoxDriver();
+        // driver = new SafariDriver();
+
+        driver.manage().window().maximize();
 
     }
 

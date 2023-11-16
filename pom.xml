@@ -9,7 +9,8 @@
     # * Telegram: https://t.me/rajatt95
     # * Instagram: https://www.instagram.com/rajattvermaa95/
     # * YouTube: https://www.youtube.com/@rajatt95
-    # * WhatsApp: https://chat.whatsapp.com/DVRP0ViD0YwELUKF2XMJHy
+    # * WhatsApp Community: https://chat.whatsapp.com/DVRP0ViD0YwELUKF2XMJHy
+    # * WhatsApp Channel: https://whatsapp.com/channel/0029Va9XXMhJ93waOU5Xer3r
     # */
     #/***************************************************/
 -->
@@ -32,11 +33,11 @@
     <maven.compiler.target>15</maven.compiler.target>
 
     <!-- Dependencies version -->
-    <selenium.java.version>4.10.0</selenium.java.version>
+    <selenium.java.version>4.11.0</selenium.java.version>
     <webdrivermanager.version>5.4.1</webdrivermanager.version>
     <testng.version>7.8.0</testng.version>
-    <commons-lang3.version>3.12.0</commons-lang3.version>
-    <slf4j.version>2.0.6</slf4j.version>
+    <commons-lang3.version>3.13.0</commons-lang3.version>
+    <slf4j.version>2.0.7</slf4j.version>
 
 
   </properties>
