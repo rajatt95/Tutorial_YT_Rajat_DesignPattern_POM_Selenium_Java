@@ -39,7 +39,7 @@
 - [Contacts](#contacts)
 
 ## 📖 Introduction
-This repository contains a Tutorial for Page Object Model (POM) design pattern implementation using Selenium WebDriver and Java for automated testing of web applications.
+This repository contains a Tutorial for Page Object Model (POM) design pattern implementation using Selenium WebDriver and Java for automated testing of applications.
 
 ## 🎥 Video Tutorial
 
