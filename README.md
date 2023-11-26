@@ -43,7 +43,7 @@ This repository contains a Tutorial for Page Object Model (POM) design pattern i
 
 ## 🎥 Video Tutorial
 
-<a href="https://www.youtube.com/watch?v=_NoOYqg8pJ4"> <img src="https://img.youtube.com/vi/_NoOYqg8pJ4/0.jpg" alt="Tutorial | POM | Selenium WebDriver + Java | Part 02 - Implement without Page Factories" width="200"> </a>
+<a href="https://www.youtube.com/watch?v=xVlSLhB3VcA&list=PLrBBHmoBFxBWV26aLM7VHcpljfJLHd6eQ"> <img src="https://img.youtube.com/vi/_NoOYqg8pJ4/0.jpg" alt="Tutorial | POM | Selenium WebDriver + Java" width="200"> </a>
 
 Click on the image above to watch the tutorial.
 
